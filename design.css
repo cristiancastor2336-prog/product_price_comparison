@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.sidebar {
+    width: 280px;
+    background: #f9f9f9;
+    border-right: 1px solid #d0d0d0;
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.sidebar-section {
+    margin-bottom: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sidebar-section:first-of-type {
+    border-top: none;
+}
+
+details {
+    padding: 0;
+}
+
+summary {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.15s ease;
+}
+
+summary:hover {
+    background-color: #f0f0f0;
+}
+
+summary::marker {
+    color: #0645ad;
+}
+
+details[open] summary {
+    background-color: #f0f0f0;
+}
+
+.subsection {
+    padding: 0;
+}
+
+.subsection-item {
+    padding: 10px 20px 10px 40px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.15s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.subsection-item:hover {
+    color: #0645ad;
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 12px;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.chapter-content {
+    margin-bottom: 32px;
+}
+
+.chapter-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 32px 0 12px 0;
+    color: #333;
+    padding-bottom: 8px;
+}
+
+.chapter-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+    color: #333;
+}
+
+.chapter-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.chapter-content ul,
+.chapter-content ol {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.chapter-content li {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    color: #333;
+}
